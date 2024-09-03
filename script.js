@@ -1,8 +1,11 @@
-function resetWheel(wheelId, resultId) {
+function resetWheel(wheelId, resultContId, resultId) {
   var wheel = document.getElementById(wheelId);
   wheel.style.transition = 'none';
   wheel.style.transform = 'rotate(0deg)';
+
   document.getElementById(resultId).innerHTML = '';
+  document.getElementById(resultContId).style.transition = 'none';
+  document.getElementById(resultContId).style.backgroundColor = 'rgba(0, 0, 0, 0)';
 }
 
 function showWheel(wheelId, headline) {
@@ -14,21 +17,22 @@ function showWheel(wheelId, headline) {
   document.getElementById(wheelId).style.display = '';
   document.getElementById('headline').innerHTML = headline;
 
-  resetWheel('seasonWheel', 'seasonResult');
+  resetWheel('seasonWheel', 'seasonResultCont', 'seasonResult', );
   resetWheel('season01Wheel', 'season01Result');
   resetWheel('season02Wheel', 'season02Result');
   resetWheel('season03Wheel', 'season03Result');
 }
 
-function spin(wheelId, zoneSize, adjust, prefix, results, resultId) {
+function spin(wheelId, zoneSize, adjust, prefix, results, resultId, resultContId) {
   const wheel = document.getElementById(wheelId);
-  
+  const audio = document.getElementById('spinWheelAudio').play();
+
   setTimeout(() => {
     var deg = Math.random() * 360;
     var randomSpin = Math.ceil((Math.random() * 10)) * 360;
     var result = 0;
-    wheel.style.transition = 'all 4s ease-out';
-    wheel.style.transform = `rotate(${deg + randomSpin}deg)`;
+    wheel.style.transition = 'all 3s ease-out';
+    wheel.style.transform = `rotate(${deg + 1440}deg)`;
 
     switch (wheelId) {
       case 'season02Wheel':
@@ -65,11 +69,15 @@ function spin(wheelId, zoneSize, adjust, prefix, results, resultId) {
     // document.getElementById(resultId).innerHTML = prefix + result;
   
       setTimeout(() => {
-        document.getElementById(resultId).innerHTML = prefix + result;
-      }, 4200);
+        setTimeout(() => {
+          document.getElementById(resultId).innerHTML = prefix + result;
+        }, 100);
+        document.getElementById(resultContId).style.transition = 'all 0.1s ease-in';
+        document.getElementById(resultContId).style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+      }, 3100);
 
-  }, 300);
-  resetWheel(wheelId, resultId);
+  }, 400);
+  resetWheel(wheelId, resultContId, resultId);
 }
 
 function main() {

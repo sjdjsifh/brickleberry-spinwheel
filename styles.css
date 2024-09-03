@@ -8,13 +8,6 @@
   height: 400px;
 }
 
-/* #marker {
-  width: 220px;
-  left: 80px;
-  top: 140px;
-  z-index: 2;
-} */
-
 body {
   background-image: url(bg.avif);
   background-size: cover;
@@ -37,7 +30,7 @@ body {
 .marker {
   position: absolute;
   width: 220px;
-  left: 80px;
+  left: 82px;
   top: 145px;
   z-index: 2;
 }
@@ -72,8 +65,21 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.resultContainer {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0px;
+  left: 300px;
+  border-radius: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
 .result {
-  margin: 0;
+  position: relative;
+  top: 145px;
   font-size: 35px;
   color: rgb(255, 241, 212);
 }

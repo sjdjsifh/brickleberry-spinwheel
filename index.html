@@ -11,47 +11,56 @@
             <h1 id="headline"></h1>
 
             <div id="seasonContainer" class="seasonContainer">
-                <img id="marker" class="marker" src="woodyMarker.png"/>
-                <img id="seasonWheel" class="wheel" src="seasonWheel.png"/>
-                <img id="seasonSpinBtn" class="spinBtn" src="spinBtn.png" onclick="spin('seasonWheel', 120, 30, 'Season ', [2, 3, 1], 'seasonResult')"/>
+                <img id="marker" class="marker" src="img/woodyMarker.png"/>
+                <img id="seasonWheel" class="wheel" src="img/seasonWheel.png"/>
+                <div id="seasonResultCont" class="resultContainer">
+                    <h2 id="seasonResult" class="result"></h2>
+                </div>
+                <img id="seasonSpinBtn" class="spinBtn" src="img/spinBtn.png" onclick="spin('seasonWheel', 120, 30, 'Season ', [2, 3, 1], 'seasonResult', 'seasonResultCont')"/>
 
                 <div id="btns">
-                    <img id="seasonBtn" class="button" src="seasonbtn.png" onclick="showWheel('seasonContainer', 'Season Wheel')"/>
-                    <img id="season01Btn" class="button" src="season01btn.png" onclick="showWheel('season01Container', 'Season 1 Wheel')"/>
-                    <img id="season02Btn" class="button" src="season02btn.png" onclick="showWheel('season02Container', 'Season 2 Wheel')"/>
-                    <img id="season03Btn" class="button" src="season03btn.png" onclick="showWheel('season03Container', 'Season 3 Wheel')"/>
+                    <img id="seasonBtn" class="button" src="img/seasonbtn.png" onclick="showWheel('seasonContainer', 'Season Wheel')"/>
+                    <img id="season01Btn" class="button" src="img/season01btn.png" onclick="showWheel('season01Container', 'Season 1 Wheel')"/>
+                    <img id="season02Btn" class="button" src="img/season02btn.png" onclick="showWheel('season02Container', 'Season 2 Wheel')"/>
+                    <img id="season03Btn" class="button" src="img/season03btn.png" onclick="showWheel('season03Container', 'Season 3 Wheel')"/>
                 </div>
                 
                 <h2 id="seasonResult" class="result"></h2>
             </div>
             
             <div id="season01Container" class="seasonContainer">
-                <img id="marker" class="marker" src="woodyMarker.png"/>
-                <img id="season01Wheel" class="wheel" src="season01Wheel.png"/>
-                <img id="season01SpinBtn" class="spinBtn" src="spinBtn.png" onclick="spin('season01Wheel', 36, 17, 'Season 1, Episode ', [8, 9, 10, 1, 2, 3, 4, 5, 6, 7], 'season01Result')"/>
+                <img id="marker" class="marker" src="img/woodyMarker.png"/>
+                <img id="season01Wheel" class="wheel" src="img/season01Wheel.png"/>
+                <div id="season01ResultCont" class="resultContainer">
+                    <h2 id="season01Result" class="result"></h2>
+                </div>
+                <img id="season01SpinBtn" class="spinBtn" src="img/spinBtn.png" onclick="spin('season01Wheel', 36, 17, 'Season 1, Episode ', [8, 9, 10, 1, 2, 3, 4, 5, 6, 7], 'season01Result', 'season01ResultCont')"/>
 
                 <div id="btns">
-                    <img id="seasonBtn" class="button" src="seasonbtn.png" onclick="showWheel('seasonContainer', 'Season Wheel')"/>
-                    <img id="season01Btn" class="button" src="season01btn.png" onclick="showWheel('season01Container', 'Season 1 Wheel')"/>
-                    <img id="season02Btn" class="button" src="season02btn.png" onclick="showWheel('season02Container', 'Season 2 Wheel')"/>
-                    <img id="season03Btn" class="button" src="season03btn.png" onclick="showWheel('season03Container', 'Season 3 Wheel')"/>
+                    <img id="seasonBtn" class="button" src="img/seasonbtn.png" onclick="showWheel('seasonContainer', 'Season Wheel')"/>
+                    <img id="season01Btn" class="button" src="img/season01btn.png" onclick="showWheel('season01Container', 'Season 1 Wheel')"/>
+                    <img id="season02Btn" class="button" src="img/season02btn.png" onclick="showWheel('season02Container', 'Season 2 Wheel')"/>
+                    <img id="season03Btn" class="button" src="img/season03btn.png" onclick="showWheel('season03Container', 'Season 3 Wheel')"/>
                 </div>
 
-                <h2 id="season01Result" class="result"></h2>
+
 
             </div>
 
             <div id="season02Container" class="seasonContainer">
-                <img id="marker" class="marker" src="woodyMarker.png"/>
-                <img id="season02Wheel" class="wheel" src="season02Wheel.png"/>
-                <img id="season02SpinBtn" class="spinBtn" src="spinBtn.png" onclick="spin('season02Wheel', 27.7, 50, 'Season 2, Episode ',
-                 [1, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2], 'season02Result')"/>
+                <img id="marker" class="marker" src="img/woodyMarker.png"/>
+                <img id="season02Wheel" class="wheel" src="img/season02Wheel.png"/>
+                <div id="season02ResultCont" class="resultContainer">
+                    <h2 id="season02Result" class="result"></h2>
+                </div>
+                <img id="season02SpinBtn" class="spinBtn" src="img/spinBtn.png" onclick="spin('season02Wheel', 27.7, 50, 'Season 2, Episode ',
+                 [1, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2], 'season02Result', 'season02ResultCont')"/>
 
                 <div id="btns">
-                    <img id="seasonBtn" class="button" src="seasonbtn.png" onclick="showWheel('seasonContainer', 'Season Wheel')"/>
-                    <img id="season01Btn" class="button" src="season01btn.png" onclick="showWheel('season01Container', 'Season 1 Wheel')"/>
-                    <img id="season02Btn" class="button" src="season02btn.png" onclick="showWheel('season02Container', 'Season 2 Wheel')"/>
-                    <img id="season03Btn" class="button" src="season03btn.png" onclick="showWheel('season03Container', 'Season 3 Wheel')"/>
+                    <img id="seasonBtn" class="button" src="img/seasonbtn.png" onclick="showWheel('seasonContainer', 'Season Wheel')"/>
+                    <img id="season01Btn" class="button" src="img/season01btn.png" onclick="showWheel('season01Container', 'Season 1 Wheel')"/>
+                    <img id="season02Btn" class="button" src="img/season02btn.png" onclick="showWheel('season02Container', 'Season 2 Wheel')"/>
+                    <img id="season03Btn" class="button" src="img/season03btn.png" onclick="showWheel('season03Container', 'Season 3 Wheel')"/>
                 </div>
 
                 <h2 id="season02Result" class="result"></h2>
@@ -59,16 +68,19 @@
             </div>
 
             <div id="season03Container" class="seasonContainer">
-                <img id="marker" class="marker" src="woodyMarker.png"/>
-                <img id="season03Wheel" class="wheel" src="season03Wheel.png"/>
-                <img id="season03SpinBtn" class="spinBtn" src="spinBtn.png" onclick="spin('season03Wheel', 27.7, 50, 'Season 3, Episode ',
-                 [1, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2], 'season03Result')"/>
+                <img id="marker" class="marker" src="img/woodyMarker.png"/>
+                <img id="season03Wheel" class="wheel" src="img/season03Wheel.png"/>
+                <div id="season03ResultCont" class="resultContainer">
+                    <h2 id="season03Result" class="result"></h2>
+                </div>
+                <img id="season03SpinBtn" class="spinBtn" src="img/spinBtn.png" onclick="spin('season03Wheel', 27.7, 50, 'Season 3, Episode ',
+                 [1, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2], 'season03Result', 'season03ResultCont')"/>
 
                 <div id="btns">
-                    <img id="seasonBtn" class="button" src="seasonbtn.png" onclick="showWheel('seasonContainer', 'Season Wheel')"/>
-                    <img id="season01Btn" class="button" src="season01btn.png" onclick="showWheel('season01Container', 'Season 1 Wheel')"/>
-                    <img id="season02Btn" class="button" src="season02btn.png" onclick="showWheel('season02Container', 'Season 2 Wheel')"/>
-                    <img id="season03Btn" class="button" src="season03btn.png" onclick="showWheel('season03Container', 'Season 3 Wheel')"/>
+                    <img id="seasonBtn" class="button" src="img/seasonbtn.png" onclick="showWheel('seasonContainer', 'Season Wheel')"/>
+                    <img id="season01Btn" class="button" src="img/season01btn.png" onclick="showWheel('season01Container', 'Season 1 Wheel')"/>
+                    <img id="season02Btn" class="button" src="img/season02btn.png" onclick="showWheel('season02Container', 'Season 2 Wheel')"/>
+                    <img id="season03Btn" class="button" src="img/season03btn.png" onclick="showWheel('season03Container', 'Season 3 Wheel')"/>
                 </div>
 
                 <h2 id="season03Result" class="result"></h2>
@@ -76,7 +88,13 @@
             </div>
 
         </div>
-
-    <script src="script.js"></script>
+    
+        <audio id="spinWheelAudio" class="spinwheelAudio">
+            <source src="spinWheelAudio.m4a" type="audio/mpeg">
+            <source src="spinWheelAudio.mp3" type="audio/mpeg">
+            <source src="spinWheelAudio.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+          </audio>
+        <script src="script.js"></script>
     </body>
 </html>
