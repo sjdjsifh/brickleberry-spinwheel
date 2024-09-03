@@ -1,0 +1,106 @@
+.seasonContainer {
+  width: 100%;
+  position: relative;
+}
+
+#seasonWheel, #season01Wheel, #season02Wheel, #season03Wheel {
+  width: 400px;
+  height: 400px;
+}
+
+/* #marker {
+  width: 220px;
+  left: 80px;
+  top: 140px;
+  z-index: 2;
+} */
+
+body {
+  background-image: url(bg.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main {
+  max-width: 1000px;
+  min-width: 1000px;
+  min-height: 700px;
+  max-height: 950px;
+  margin: auto;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  justify-content: center;
+  text-align: center;
+}
+
+.marker {
+  position: absolute;
+  width: 220px;
+  left: 80px;
+  top: 145px;
+  z-index: 2;
+}
+
+.wheel {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#seasonSpinBtn, #season01SpinBtn, #season02SpinBtn, #season03SpinBtn {
+  display: block;
+  width: 150px;
+  margin: 0px auto;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 3px solid black;
+  padding: 7px;
+}
+
+#seasonSpinBtn:hover, #season01SpinBtn:hover, #season02SpinBtn:hover, #season03SpinBtn:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#seasonSpinBtn:active, #season01SpinBtn:active, #season02SpinBtn:active, #season03SpinBtn:active{
+  background-color: rgba(255, 255, 255, 0.119)
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.result {
+  margin: 0;
+  font-size: 35px;
+  color: rgb(255, 241, 212);
+}
+
+h1 {
+  font-size: 40px;
+  color: rgb(255, 241, 212);
+  margin: 5px 0;
+}
+
+.button {
+  width: 150px;
+  margin: 20px auto;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 3px solid black;
+  padding: 10px;
+}
+
+.button:active {
+  background-color: rgba(255, 255, 255, 0.119)
+}
+
+#btns {
+  width: 1000px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
